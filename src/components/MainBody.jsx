@@ -4,6 +4,9 @@ import { sampleTestimonials } from "./ScrollingTestimonials";
 import HorizontalScrollSection from "./HorizontalScrollSection";
 import ComicCursor from "./ComicCursor";
 import MobileMenu from "./MobileMenu";
+import RulebookPage from "./RulebookPage";
+import { Link } from 'react-router-dom';
+
 
 const MainBody = () => {
   return (
@@ -79,9 +82,9 @@ const MainBody = () => {
               </p>
 
               <div className="flex flex-wrap gap-4 pt-4">
-                {/* <button className="bg-blue-500 text-white text-xl font-black px-10 py-5 comic-border hover:bg-blue-700 transition-all duration-300 uppercase hover:-translate-y-2">
-                  Claim Your Spot
-                </button> */}
+                <a href="/rulebook" className="bg-blue-500 text-white text-xl font-black px-10 py-5 comic-border hover:bg-blue-700 transition-all duration-300 uppercase hover:-translate-y-2">
+                  Read Rulebook
+                </a>
                 <a
                   className="bg-white text-black text-xl font-black px-10 py-5 comic-border hover:bg-slate-100 transition-all uppercase duration-300 hover:-translate-y-2"
                   href="#events"

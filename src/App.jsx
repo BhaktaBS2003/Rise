@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import "./index.css";
 import MainBody from "./components/MainBody";
+import { BrowserRouter, Routes, Route } from "react-router-dom"; 
 import ScrollingTestimonials from "./components/ScrollingTestimonials";
 import { sampleTestimonials } from "./components/ScrollingTestimonials";
 import HorizontalScrollSection from "./components/HorizontalScrollSection";
 import ComicCursor from "./components/ComicCursor";
 import IntroVideo from "./components/IntroVideo";
+import RulebookPage from "./components/RulebookPage";
 import MobileMenu from "./components/MobileMenu";
 
 const App = () => {
@@ -31,7 +33,12 @@ const App = () => {
   // If user has seen intro before, skip it
   if (hasSeenIntro) {
     return (
-      <MainBody />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<MainBody />} />
+          <Route path="/rulebook" element={<RulebookPage />} />
+        </Routes>
+      </BrowserRouter>
     );
   }
 
@@ -40,7 +47,12 @@ const App = () => {
       {showIntro && <IntroVideo onComplete={handleIntroCompleteWithMemory} />}
 
       {showWebsite && (
-        <MainBody/>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<MainBody />} />
+            <Route path="/rulebook" element={<RulebookPage />} />
+          </Routes>
+        </BrowserRouter>
       )}
     </>
   );

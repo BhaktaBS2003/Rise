@@ -72,3 +72,19 @@
   animation: spin-slow-icon 8s linear infinite;
 }
 
+/* Add to your index.css */
+.perspective {
+  perspective: 2000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.rotate-y-12 {
+  transform: rotateY(12deg);
+}
+
+.group:hover .group-hover\:rotate-y-12 {
+  transform: rotateY(12deg);
+}
