@@ -1045,6 +1045,12 @@ const teamMembers = {
       image: "/DK.webp",
     },
     {
+      name: "Punya Kirti Pati",
+      role: "Co-Lead",
+      year: "3rd Year",
+      image: "/PKP.webp",
+    },
+    {
       name: "Ankit Kumar Swain",
       role: "Member",
       year: "1st year",
@@ -1062,6 +1068,7 @@ const teamMembers = {
       year: "2nd Year",
       image: "/SP.webp",
     },
+    
   ],
 
   webDesign: [
