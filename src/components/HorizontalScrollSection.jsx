@@ -57,7 +57,7 @@ const HorizontalScrollSection = () => {
       color: "",
       icon: "palette",
       link: "https://forms.gle/XDffN8Q8UTrr9FtQ6",
-      rulebookLink: "https://forms.gle/2Rt8zQLjRsVHiwau8"
+      rulebookLink: "https://drive.google.com/file/d/1dpbwYAU38ho2Km1VgjP44xPE-W3-rNvm/view?usp=drivesdk"
     },
     // {
     //   id: 4,
