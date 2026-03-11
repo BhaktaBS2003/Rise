@@ -78,9 +78,9 @@ const MainBody = () => {
               </p>
 
               <div className="flex flex-wrap gap-4 pt-4">
-                <button className="bg-blue-500 text-white text-xl font-black px-10 py-5 comic-border hover:bg-blue-700 transition-all duration-300 uppercase hover:-translate-y-2">
+                {/* <button className="bg-blue-500 text-white text-xl font-black px-10 py-5 comic-border hover:bg-blue-700 transition-all duration-300 uppercase hover:-translate-y-2">
                   Claim Your Spot
-                </button>
+                </button> */}
                 <a
                   className="bg-white text-black text-xl font-black px-10 py-5 comic-border hover:bg-slate-100 transition-all uppercase duration-300 hover:-translate-y-2"
                   href="#events"
@@ -269,7 +269,7 @@ const MainBody = () => {
         <ScrollingTestimonials data={sampleTestimonials} />
 
         {/* Sponsors */}
-        <section className="py-24 px-6 lg:px-20 bg-blue-500/10">
+        {/* <section className="py-24 px-6 lg:px-20 bg-blue-500/10">
           <div className="max-w-7xl mx-auto">
             <p className="text-center font-black uppercase tracking-widest text-blue-500 mb-12">
               Empowered by
@@ -286,7 +286,7 @@ const MainBody = () => {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Secretary Message Section */}
         <section
@@ -302,10 +302,10 @@ const MainBody = () => {
             {/* Section Header */}
             <div className="text-center mb-12">
               <div className="inline-block bg-yellow-400 text-black font-black px-6 py-2 comic-border -rotate-2 mb-6">
-                FROM THE DESK OF
+                FROM THE DESK OF SECRETARY
               </div>
               <h2 className="text-6xl font-black text-white uppercase italic tracking-tighter mb-4">
-                Secretary's <span className="text-blue-500">Message</span>
+                HER <span className="text-blue-500">Message</span>
               </h2>
             </div>
 
@@ -1045,7 +1045,7 @@ const teamMembers = {
       image: "/DK.webp",
     },
     {
-      name: "Ankit Kumar Singh",
+      name: "Ankit Kumar Swain",
       role: "Member",
       year: "1st year",
       image: "/AKS.webp",
@@ -1077,13 +1077,13 @@ const teamMembers = {
       year: "4th Year",
       image: "/AM.webp",
     },
-    {
-      name: "P Satya Prakash",
-      role: "UI/UX Lead",
-      year: "4th Year",
-      image:
-        "/PSP.webp",
-    },
+    // {
+    //   name: "P Satya Prakash",
+    //   role: "UI/UX Lead",
+    //   year: "4th Year",
+    //   image:
+    //     "/PSP.webp",
+    // },
   ],
 
   graphics: [
@@ -1105,7 +1105,15 @@ const teamMembers = {
       role: "Graphics Co-Lead",
       year: "3rd Year",
       image:
-        "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?w=400&h=400&fit=crop",
+        "/SR.webp",
+      //   social: { linkedin: "#" },
+    },
+    {
+      name: "Ananya Das",
+      role: "Member",
+      year: "2nd Year",
+      image:
+        "/Ananya.webp",
       //   social: { linkedin: "#" },
     },
   ],
@@ -1123,7 +1131,7 @@ const teamMembers = {
       role: "Logistics Lead",
       year: "3rd Year",
       image:
-        "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=400&fit=crop",
+        "/PM.webp",
       //   social: { linkedin: "#" },
     },
     {
@@ -1155,7 +1163,7 @@ const teamMembers = {
       role: "Media Prod Lead",
       year: "3rd Year",
       image:
-        "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?w=400&h=400&fit=crop",
+        "/BP.webp",
       //   social: { instagram: "#", linkedin: "#" },
     },
   ],
@@ -1166,7 +1174,7 @@ const teamMembers = {
       role: "PR Lead",
       year: "3rd Year",
       image:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop",
+        "/AS.webp",
       //   social: { instagram: "#", twitter: "#" },
     },
     {
@@ -1181,7 +1189,7 @@ const teamMembers = {
       role: "Member",
       year: "2nd Year",
       image:
-        "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&h=400&fit=crop",
+        "/SJ.webp",
       //   social: { instagram: "#" },
     },
   ],

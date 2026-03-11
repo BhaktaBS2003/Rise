@@ -90,12 +90,12 @@ export const sampleTestimonials = [
     image: "/tst5.webp",
     description: "Sonic Boom stage was legendary! The production quality was world-class."
   },
-  {
-    name: "Elena Rodriguez",
-    role: "Game Developer",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
-    description: "Frag Fest was intense! Competed against the best players in the region."
-  }
+  // {
+  //   name: "Elena Rodriguez",
+  //   role: "Game Developer",
+  //   image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
+  //   description: "Frag Fest was intense! Competed against the best players in the region."
+  // }
 ];
 
 export default ScrollingTestimonials;

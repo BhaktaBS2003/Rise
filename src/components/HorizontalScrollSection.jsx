@@ -32,7 +32,7 @@ const HorizontalScrollSection = () => {
       title: "Student Research Symposium (SRS)",
       description: "Present innovative research across emerging technology domains.",
       image:
-        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600&h=400&fit=crop",
+        "/flyer2.webp",
       color: "bg-primary",
       icon: "note",
       link:"https://share.google/fl3vIgl6CUSazbj1K"
@@ -42,8 +42,8 @@ const HorizontalScrollSection = () => {
       title: "Clash of Perspectives",
       description: "Express ideas through creative interpretation and perspective.",
       image:
-        "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=600&h=400&fit=crop",
-      color: "bg-yellow-400",
+        "/flyer1.webp",
+      color: "",
       icon: "light",
       link:"https://share.google/BZ3RkV2fyTDghfTW8"
     },
@@ -52,8 +52,8 @@ const HorizontalScrollSection = () => {
       title: "Reverse Engineering",
       description: "Analyze systems and decode technical problem logic.",
       image:
-        "https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&h=400&fit=crop",
-      color: "bg-green-500",
+        "/flyer3.webp",
+      color: "",
       icon: "palette",
       link:"https://forms.gle/XDffN8Q8UTrr9FtQ6"
     },
@@ -132,7 +132,7 @@ const HorizontalScrollSection = () => {
                   </button>
                   
                   <div className={`comic-border overflow-hidden ${card.color} relative`}>
-                    <div className="h-40 overflow-hidden border-b-4 border-black">
+                    <div className="h-96 overflow-hidden border-b-4 border-black">
                       <img
                         src={card.image}
                         alt={card.title}
@@ -257,7 +257,7 @@ const HorizontalScrollSection = () => {
                   <img
                     src={card.image}
                     alt={card.title}
-                    className="h-full w-full object-cover mix-blend-overlay opacity-80 group-hover:scale-110 transition-transform duration-700"
+                    className="h-max w-full object-cover mix-blend-overlay opacity-80 group-hover:scale-110 transition-transform duration-700"
                   />
 
                   <div className="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-transparent"></div>
@@ -276,9 +276,9 @@ const HorizontalScrollSection = () => {
                     </p>
                   </div>
 
-                  <span className="absolute -top-10 -right-10 text-[200px] font-black text-white/50 pointer-events-none">
+                  {/* <span className="absolute -top-10 -right-10 text-[200px] font-black text-white/50 pointer-events-none">
                     {String(index + 1).padStart(2, "0")}
-                  </span>
+                  </span> */}
                 </div>
               </motion.div>
             ))}
