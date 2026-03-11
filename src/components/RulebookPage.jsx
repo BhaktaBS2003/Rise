@@ -55,6 +55,7 @@ const RulebookPage = () => {
             </h2>
           </div> */}
           
+          
           <Link 
             to="/" 
             className="bg-blue-500 hover:bg-blue-600 text-white font-black px-6 py-2 comic-border uppercase transition-transform hover:-translate-y-1"
