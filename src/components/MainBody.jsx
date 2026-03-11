@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import ScrollingTestimonials from "./ScrollingTestimonials";
 import { sampleTestimonials } from "./ScrollingTestimonials";
 import HorizontalScrollSection from "./HorizontalScrollSection";
@@ -27,20 +27,21 @@ const MainBody = () => {
           </div>
 
           <nav className="hidden md:flex items-center gap-10">
-            {["Home", "About", "Events", "Timeline", "Team"].map(
-              (item) => (
-                <a
-                  key={item}
-                  href={`#${item.toLowerCase()}`}
-                  className="font-extrabold hover:text-yellow-400 transition-colors uppercase text-md tracking-widest text-white italic"
-                >
-                  {item}
-                </a>
-              ),
-            )}
+            {["Home", "About", "Events", "Timeline", "Team"].map((item) => (
+              <a
+                key={item}
+                href={`#${item.toLowerCase()}`}
+                className="font-extrabold hover:text-yellow-400 transition-colors uppercase text-md tracking-widest text-white italic"
+              >
+                {item}
+              </a>
+            ))}
           </nav>
 
-          <a className="hidden md:block bg-blue-500 hover:bg-blue-600 text-white font-black px-8 py-3 comic-border uppercase transition-transform hover:-translate-y-1 active:translate-y-0" href="#events">
+          <a
+            className="hidden md:block bg-blue-500 hover:bg-blue-600 text-white font-black px-8 py-3 comic-border uppercase transition-transform hover:-translate-y-1 active:translate-y-0"
+            href="#events"
+          >
             Register Now
           </a>
         </div>
@@ -50,7 +51,10 @@ const MainBody = () => {
 
       {/* Hero Section */}
       <main className="relative flex-1">
-        <section className="relative px-6 lg:px-20 py-15 lg:py-20 overflow-hidden" id="home">
+        <section
+          className="relative px-6 lg:px-20 py-15 lg:py-20 overflow-hidden"
+          id="home"
+        >
           <div className="absolute top-0 right-0 w-1/2 h-full opacity-10 halftone text-blue-500 pointer-events-none"></div>
 
           <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center relative z-10">
@@ -65,10 +69,7 @@ const MainBody = () => {
               >
                 RISE
                 <br />
-                <span
-                  className="drop-shadow-[4px_4px_0px_#fff] text-blue-500"
-                  
-                >
+                <span className="drop-shadow-[4px_4px_0px_#fff] text-blue-500">
                   2026
                 </span>
               </h1>
@@ -953,13 +954,18 @@ const Footer = () => (
             Connect
           </h4>
           <div className="flex gap-4">
-            {["share", "chat", "campaign"].map((icon) => (
-              <div
-                key={icon}
+            {[
+              { icon: "mail", link: "mailto:achieversilicon@gmail.com" },
+              { icon: "chat", link: "https://www.instagram.com/silicon_achievers_club?igsh=ZWg5ejJpMHhtZHM4" },
+              // { icon: "campaign", link: "https://discord.gg/rise2026" },
+            ].map((item) => (
+              <a
+                key={item.icon}
+                href={item.link}
                 className="w-12 h-12 bg-white text-black flex items-center justify-center comic-border cursor-pointer hover:bg-blue-500 hover:text-white transition-colors"
               >
-                <span className="material-symbols-outlined">{icon}</span>
-              </div>
+                <span className="material-symbols-outlined">{item.icon}</span>
+              </a>
             ))}
           </div>
         </div>
@@ -1068,7 +1074,6 @@ const teamMembers = {
       year: "2nd Year",
       image: "/SP.webp",
     },
-    
   ],
 
   webDesign: [
@@ -1111,16 +1116,14 @@ const teamMembers = {
       name: "Sanchita Routray",
       role: "Graphics Co-Lead",
       year: "3rd Year",
-      image:
-        "/SR.webp",
+      image: "/SR.webp",
       //   social: { linkedin: "#" },
     },
     {
       name: "Ananya Das",
       role: "Member",
       year: "2nd Year",
-      image:
-        "/Ananya.webp",
+      image: "/Ananya.webp",
       //   social: { linkedin: "#" },
     },
   ],
@@ -1137,8 +1140,7 @@ const teamMembers = {
       name: "Prakhar Mishra",
       role: "Logistics Lead",
       year: "3rd Year",
-      image:
-        "/PM.webp",
+      image: "/PM.webp",
       //   social: { linkedin: "#" },
     },
     {
@@ -1169,8 +1171,7 @@ const teamMembers = {
       name: "Bhargav Kumar Patra",
       role: "Media Prod Lead",
       year: "3rd Year",
-      image:
-        "/BP.webp",
+      image: "/BP.webp",
       //   social: { instagram: "#", linkedin: "#" },
     },
   ],
@@ -1180,8 +1181,7 @@ const teamMembers = {
       name: "Ashish Samal",
       role: "PR Lead",
       year: "3rd Year",
-      image:
-        "/AS.webp",
+      image: "/AS.webp",
       //   social: { instagram: "#", twitter: "#" },
     },
     {
@@ -1195,8 +1195,7 @@ const teamMembers = {
       name: "Shafaq Jamal",
       role: "Member",
       year: "2nd Year",
-      image:
-        "/SJ.webp",
+      image: "/SJ.webp",
       //   social: { instagram: "#" },
     },
   ],
