@@ -4,9 +4,9 @@ import { sampleTestimonials } from "./ScrollingTestimonials";
 import HorizontalScrollSection from "./HorizontalScrollSection";
 import ComicCursor from "./ComicCursor";
 import MobileMenu from "./MobileMenu";
+import { Mail, Instagram } from "lucide-react";
 import RulebookPage from "./RulebookPage";
-import { Link } from 'react-router-dom';
-
+import { Link } from "react-router-dom";
 
 const MainBody = () => {
   return (
@@ -82,7 +82,10 @@ const MainBody = () => {
               </p>
 
               <div className="flex flex-wrap gap-4 pt-4">
-                <a href="/rulebook" className="bg-blue-500 text-white text-xl font-black px-10 py-5 comic-border hover:bg-blue-700 transition-all duration-300 uppercase hover:-translate-y-2">
+                <a
+                  href="/rulebook"
+                  className="bg-blue-500 text-white text-xl font-black px-10 py-5 comic-border hover:bg-blue-700 transition-all duration-300 uppercase hover:-translate-y-2"
+                >
                   Read Rulebook
                 </a>
                 <a
@@ -419,11 +422,11 @@ const MainBody = () => {
               </div>
 
               {/* Decorative elements */}
-              <div className="flex justify-center gap-3 mt-16">
+              {/* <div className="flex justify-center gap-3 mt-16">
                 <div className="w-20 h-2 bg-blue-500 comic-border"></div>
                 <div className="w-10 h-2 bg-yellow-400 comic-border"></div>
                 <div className="w-20 h-2 bg-blue-500 comic-border"></div>
-              </div>
+              </div> */}
             </div>
           </div>
         </section>
@@ -958,18 +961,25 @@ const Footer = () => (
           </h4>
           <div className="flex gap-4">
             {[
-              { icon: "mail", link: "mailto:achieversilicon@gmail.com" },
-              { icon: "chat", link: "https://www.instagram.com/silicon_achievers_club?igsh=ZWg5ejJpMHhtZHM4" },
-              // { icon: "campaign", link: "https://discord.gg/rise2026" },
-            ].map((item) => (
-              <a
-                key={item.icon}
-                href={item.link}
-                className="w-12 h-12 bg-white text-black flex items-center justify-center comic-border cursor-pointer hover:bg-blue-500 hover:text-white transition-colors"
-              >
-                <span className="material-symbols-outlined">{item.icon}</span>
-              </a>
-            ))}
+              { icon: Mail, link: "mailto:achieversilicon@gmail.com" },
+              {
+                icon: Instagram,
+                link: "https://www.instagram.com/silicon_achievers_club?igsh=ZWg5ejJpMHhtZHM4",
+              },
+            ].map((item, index) => {
+              const Icon = item.icon;
+              return (
+                <a
+                  key={index}
+                  href={item.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-12 h-12 bg-white text-black flex items-center justify-center comic-border cursor-pointer hover:bg-blue-500 hover:text-white transition-colors"
+                >
+                  <Icon size={20} />
+                </a>
+              );
+            })}
           </div>
         </div>
       </div>
