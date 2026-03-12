@@ -261,7 +261,7 @@ const HorizontalScrollSection = () => {
                 className="group relative h-[70vh] w-[90vw] lg:w-[40vw] xl:w-[30vw] shrink-0"
               >
                 <div
-                  className={`relative h-full w-full comic-border overflow-hidden ${card.color}`}
+                  className={`relative h-128 w-full comic-border overflow-hidden ${card.color}`}
                 >
                   {/* Claim Your Spot Button - Desktop */}
                   <button
@@ -277,18 +277,18 @@ const HorizontalScrollSection = () => {
                     className="h-max w-full object-cover mix-blend-overlay opacity-80 group-hover:scale-110 transition-transform duration-700"
                   />
 
-                  <div className="absolute inset-0 bg-linear-to-t from-black/80 via-transparent to-transparent"></div>
+                  <div className="absolute inset-0 bg-linear-to-t from-black via-black/30 to-transparent"></div>
 
                   <div className="absolute bottom-0 left-0 p-8 text-white">
                     <div className="flex items-center gap-3 mb-3">
                       <span className="material-symbols-outlined text-3xl">
                         {card.icon}
                       </span>
-                      <h3 className="text-4xl font-black uppercase italic">
+                      <h3 className="text-3xl font-black uppercase italic">
                         {card.title}
                       </h3>
                     </div>
-                    <p className="text-lg font-bold opacity-90 max-w-xs">
+                    <p className="text-lg font-bold opacity-90 max-w-xs text-gray-300 italic">
                       {card.description}
                     </p>
                   </div>
