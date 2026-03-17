@@ -116,7 +116,7 @@ const HorizontalScrollSection = () => {
                 swipe
               </span>
               <span className="text-sm font-bold text-slate-400 uppercase tracking-widest">
-                Swipe to explore moments
+                Swipe to explore events
               </span>
             </div>
           </div>
@@ -235,7 +235,7 @@ const HorizontalScrollSection = () => {
             swipe
           </span>
           <span className="text-sm font-bold text-slate-400 uppercase tracking-widest">
-            Swipe to explore moments
+            Swipe to explore events
           </span>
         </div>
       </div>
