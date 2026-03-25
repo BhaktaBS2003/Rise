@@ -1132,13 +1132,13 @@ const teamMembers = {
       image: "/SR.webp",
       //   social: { linkedin: "#" },
     },
-    {
-      name: "Ananya Das",
-      role: "Member",
-      year: "2nd Year",
-      image: "/Ananya.webp",
-      //   social: { linkedin: "#" },
-    },
+    // {
+    //   name: "Ananya Das",
+    //   role: "Member",
+    //   year: "2nd Year",
+    //   image: "/Ananya.webp",
+    //   //   social: { linkedin: "#" },
+    // },
   ],
 
   logistics: [
